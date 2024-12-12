@@ -328,7 +328,7 @@ app.use(
     secret: '08915440dd4c280182c3f5fff9496d6df98c1f9ab403d89a9f3c2e562d7d05eeb3834b8be96f0d4aab33614f6da00d09edb4e82991c40dd567ec4172a00e4f32',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: process.env.NODE_ENV === 'production' },
+    cookie: { secure: false, sameSite: 'strict' },
   })
 );
 
