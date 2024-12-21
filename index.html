@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friedrichshain Police Station | Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+</head>
+
+<body>
+  <script>
+    // Redirect to emails page if the user is already logged in
+    if (sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'emails.html';
+    }
+  </script>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+    <a class="navbar-brand mx-auto text-center" href="#">
+      <img src="./public/images/police-logo.png" alt="Police Logo" class="logo">
+      Friedrichshain Police Webmail
+    </a>
+  </nav>
+
+  <!-- Adjusted container to move login form up -->
+  <div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="card login-card">
+      <div class="card-body text-center">
+        <img src="./public/images/police-logo.png" alt="Police Logo" class="logo mb-3 mx-auto">
+        <h5 class="mb-4">Friedrichshain Police Login</h5>
+
+        <!-- Static form with frontend validation -->
+        <form id="loginForm">
+        
+          <!-- Error Message -->
+          <div id="error-message" class="alert alert-danger d-none" role="alert"></div>
+        
+          <!-- Email Field with Icon -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            </div>
+            <input type="email" class="form-control" placeholder="Email" id="email" required>
+          </div>
+        
+          <!-- Password Field with Icon -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Password" id="password" required>
+          </div>
+        
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn btn btn-primary btn-block">Sign In</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Hardcoded credentials for static login
+    const correctEmail = "laura.heisenberg@polizei-friedrichshain21.de";
+    const correctPassword = "gr3t@07102012MAIL";
+    
+    // Form submission event
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      // Check credentials
+      if (email === correctEmail && password === correctPassword) {
+        // Redirect to the email page (replace this with your actual redirect logic)
+        sessionStorage.setItem('loggedIn', true);
+        window.location.href = './emails.html';
+      } else {
+        // Show error message
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.textContent = 'Incorrect email or password!';
+        errorMessage.classList.remove('d-none');
+      }
+    });
+  </script>
+</body>
+
+</html>

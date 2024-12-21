@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friedrichshain Police | Email Viewer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script>
+    // Redirect to login page if the user is not logged in
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'index.html';
+    }
+</script>
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="./public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Police Webmail
+      </a>
+    </nav>
+
+    <!-- Email Content -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <!-- Back Button -->
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Back to Inbox
+              </a>
+            </div>
+
+            <!-- Email Header -->
+            <div class="email-header">
+              <h3 class="card-title">Substance Analysis Report - Exhibit FH392-01</h3>
+              <span class="email-date">05 October 2024 10:45</span>
+            </div>
+            <hr>
+
+            <!-- Email Details -->
+            <div class="email-details">
+              <p><strong>From:</strong> Officer Erik Jansen &lt;erik.jansen@polizei-friedrichshain21.de&gt;</p>
+            </div>
+            <hr>
+
+            <!-- Email Body -->
+            <div class="email-body">
+              <p>Detective Heisenberg,<br><br>
+                As requested, I’ve compiled the following report regarding the analysis of the substance residue found at the scene. Let me know if there’s anything else you need.<br><br>
+                <blockquote style="font-family:monospace; background-color:#f9f9f9; border-left:5px solid #ddd; padding:10px;">
+                  <b>Subject of Report:</b> Analysis of Controlled Substance Residue<br><br>
+                  <b>Incident Summary:</b><br>
+                  On the evening of October 2, 2024, an item was collected from an individual present at the RevoluPharma facility following the death of Dr. Maximilian Falkenberg. The item in question—a small, clear ziplock bag with visible white powder residue—was submitted for analysis by the Berlin Forensic Laboratory to determine the nature of the substance.<br><br>
+                  <b>Description of Evidence Collected:</b><br>
+                  1. <b>Exhibit #FH392-01:</b><br>
+                     &bull; <b>Item:</b> Small, clear ziplock bag<br>
+                     &bull; <b>Contents:</b> Residual white powder adhering to the interior of the bag<br>
+                     &bull; <b>Dimensions:</b> Approx. 4 cm x 4 cm<br>
+                     &bull; <b>Status:</b> Secured in evidence bag for forensic testing<br><br>
+                  <b>Laboratory Analysis Report:</b><br>
+                  <b>Date of Analysis:</b> October 3, 2024<br>
+                  <b>Conducted by:</b> Berlin Forensic Laboratory, Toxicology Division<br><br>
+                  <b>Analytical Findings:</b><br>
+                  1. <b>Substance Identification:</b><br>
+                     &bull; <b>Method:</b> Gas Chromatography-Mass Spectrometry (GC-MS) and Fourier Transform Infrared Spectroscopy (FTIR)<br>
+                     &bull; <b>Result:</b> Positive identification of cocaine hydrochloride<br>
+                     &bull; <b>Purity Level:</b> Approximately 82% pure cocaine<br>
+                  2. <b>Additional Testing Results:</b><br>
+                     &bull; <b>Presence of Adulterants:</b> Traces of caffeine and levamisole detected, both common cutting agents found in street cocaine<br>
+                     &bull; <b>Quantity:</b> Insufficient residue for weight measurement; classified as trace residue<br><br>
+                  <b>Conclusion:</b><br>
+                  The analysis confirmed the presence of cocaine hydrochloride in Exhibit #FH392-01. The purity and composition are consistent with substances commonly used for personal consumption. This exhibit has been cataloged and retained in police custody as part of the ongoing investigation.<br><br>
+                  <b>Report Compiled by:</b><br>
+                  Officer Erik Jansen<br>
+                </blockquote>
+                <br>
+                Looking forward to your thoughts.<br><br>
+                Best,<br>
+                Erik
+              </p>
+            </div>
+
+            <hr>
+            <!-- Display Replies -->
+            <div class="email-replies">
+              <div class="reply">
+                <p><strong>Detective Laura Heisenberg &lt;laura.heisenberg@polizei-friedrichshain21.de&gt;:</strong><br><br>
+                Hmm, interesting. Let’s keep this detail in mind as we progress. Thanks for pulling this together, Erik.<br><br>
+                <br>Detective Heisenberg</p>
+                <p><small>06 October 2024 11:02</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

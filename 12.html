@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friedrichshain Police | Email Viewer</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script>
+    // Redirect to login page if the user is not logged in
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'index.html';
+    }
+</script>
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="./public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Police Webmail
+      </a>
+    </nav>
+
+
+    <!-- Email Content -->
+<div class="row">
+    <div class="col-md-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <!-- Back Button -->
+          <div class="d-flex align-items-center back-to-inbox">
+            <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+              <i class="fas fa-arrow-left me-2"></i> Back to Inbox
+            </a>
+          </div>
+  
+          <!-- Email Header -->
+          <div class="email-header">
+            <h3 class="card-title">Follow-Up on Toxicology Report</h3>
+            <span class="email-date">07 October 2024 15:34</span>
+          </div>
+          <hr>
+  
+          <!-- Email Details -->
+          <div class="email-details">
+            <p><strong>From:</strong> Officer Julia Richter &lt;julia.richter@polizei-friedrichshain21.de&gt;</p>
+          </div>
+          <hr>
+  
+          <!-- Email Body -->
+          <div class="email-body">
+            <p>Detective Heisenberg,<br><br>
+            I wanted to bring up something interesting regarding the toxicology report on Dr. Falkenberg. The report came back negative for any substances, including alcohol. However, several witnesses at the event mentioned seeing him drinking wine that evening. Could it be worth re-examining the materials or running the analysis again to rule out any errors or overlooked substances?<br><br>
+            Let me know your thoughts when you get a chance.<br><br>
+            Best regards,<br>
+            Officer Julia Richter<br>
+            Friedrichshain Police Station 21</p>
+          </div>
+  
+          <!-- Display Attachments -->
+          <!-- No attachments for this email, so this section can be omitted -->
+  
+          <hr>
+          <!-- Display Replies -->
+          <div class="email-replies">
+            <!-- No replies for this email, so this section can be omitted -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

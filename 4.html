@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friedrichshain Police | Email Viewer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script>
+    // Redirect to login page if the user is not logged in
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'index.html';
+    }
+</script>
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="./public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Police Webmail
+      </a>
+    </nav>
+
+    <!-- Email Content -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <!-- Back Button -->
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Back to Inbox
+              </a>
+            </div>
+
+            <!-- Email Header -->
+            <div class="email-header">
+              <h3 class="card-title">Suspicious Activity Report - Kottbusser Tor</h3>
+              <span class="email-date">01 October 2024 14:45</span>
+            </div>
+            <hr>
+
+            <!-- Email Details -->
+            <div class="email-details">
+              <p><strong>From:</strong> Officer Julia Richter &lt;julia.richter@polizei-friedrichshain21.de&gt;</p>
+            </div>
+            <hr>
+
+            <!-- Email Body -->
+            <div class="email-body">
+              <p>Dear Detective Heisenberg,<br><br>
+                I am writing to inform you about a recent report we received concerning suspicious behavior in the Kottbusser Tor area. Over the past few nights, a group of individuals has been observed congregating in the same spots, often late at night. There have been reports of loud conversations and sudden movements near some parked vehicles, which seem out of place. Some local residents have expressed concern, and it seems this group may be involved in something more serious. <br><br>
+                I recommend reviewing the footage from the security cameras positioned around the plaza and surrounding streets. If you need any assistance with this, please let me know. I'll be in the area tonight and can help with a physical assessment if necessary.<br><br>
+                Best regards,<br>
+                Officer Julia Richter
+              </p>
+            </div>
+
+            <hr>
+            <!-- Display Replies -->
+            <div class="email-replies">
+              <div class="reply">
+                <p><strong>Detective Laura Heisenberg &lt;laura.heisenberg@polizei-friedrichshain21.de&gt;:</strong><br><br>
+                Thanks for the update, Officer Richter. I'll begin reviewing the footage tonight and coordinate with the patrol team for any further investigation. If anything unusual comes up, I’ll let you know immediately. Let's stay in touch on this. I'll check back in tomorrow morning with any updates.<br><br>
+                Best,<br>
+                Detective Laura Heisenberg</p>
+                <p><small>01 October 2024 16:10</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

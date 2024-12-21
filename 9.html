@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Friedrichshain Police | Email Viewer</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./public/styles.css">
+  <script>
+    // Redirect to login page if the user is not logged in
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'index.html';
+    }
+</script>
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="./public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Police Webmail
+      </a>
+    </nav>
+<!-- Email Content -->
+<div class="row">
+    <div class="col-md-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <!-- Back Button -->
+          <div class="d-flex align-items-center back-to-inbox">
+            <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+              <i class="fas fa-arrow-left me-2"></i> Back to Inbox
+            </a>
+          </div>
+  
+          <!-- Email Header -->
+          <div class="email-header">
+            <h3 class="card-title">Re: Quick Question About Dr. Falkenberg’s Case</h3>
+            <span class="email-date">07 October 2024 09:23</span>
+          </div>
+          <hr>
+  
+          <!-- Email Details -->
+          <div class="email-details">
+            <p><strong>From:</strong> Dr. Alex Brunner &lt;alex.brunner@polizei-friedrichshain21.de&gt;</p>
+          </div>
+          <hr>
+  
+          <!-- Email Body -->
+          <div class="email-body">
+            <p>Hey Laura,<br><br>
+            Great to hear from you! I’m doing well, just the usual chaos at the lab. The results came back negative? Now that’s interesting.<br><br>
+            To answer your question, yes, you can calculate the time of ingestion if you find out what the substance is. 
+            All you need to know is the tmax of the drug, which is the time at which the highest concentration of the drug is in the blood. 
+            That must have been the time the poor guy died. From there, it’s a matter of simple math: just subtract the tmax 
+            (so the amount of time it takes for the substance to reach the highest concentration) from the time of death to figure out when the poor guy drank the poison. 
+            Call me if you need a scientific article on tmax of specific substances – I can certainly help with that.<br><br>
+            Best,<br>
+            Alex</p>
+          </div>
+  
+          <!-- Display Attachments -->
+          <!-- No attachments for this email, so this section can be omitted -->
+  
+          <hr>
+          <!-- Display Replies -->
+          <div class="email-replies">
+            <div class="reply">
+              <p><strong>Detective Laura Heisenberg &lt;laura.heisenberg@polizei-friedrichshain21.de&gt; on 06.10.2024 14:52:</strong><br><br>
+              <em>Hi Alex!<br><br>
+              I hope you’re doing well! I wanted to reach out because I’m in a bit of a bind with the case I’m working on. As you might have heard, Dr. Falkenberg died during his speech at the launch of amnolimumab. We suspect he was poisoned, but the toxicology reports came back negative, which I find really absurd.<br><br>
+              I’m wondering if there’s any way to calculate the time of ingestion if we know the time of death and the potential substance involved. I’ve ordered a testing kit myself, the toxicology departments seems to take ages nowadays. I’d really appreciate your insight on this!
+              Let me know if you have a moment to chat. I miss our coffee breaks at the lab!<br><br>
+              Take care,<br>
+              Laura</em></p>
+              <p><small>06 October 2024 14:52</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
