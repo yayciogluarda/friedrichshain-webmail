@@ -10,6 +10,10 @@ body {
   background-color: #203764 !important;  /* Dark blue for navbar */
 }
 
+.logo {
+  margin-left: 10px;
+}
+
 .navbar-brand {
   color: #ffffff;
   font-size: 1.25rem;
