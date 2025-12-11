@@ -31,6 +31,36 @@ body {
   color: #fff;
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 20px; /* space between links */
+  justify-content: flex-end; /* right-align */
+  padding: 10px;
+  background-color: #222; /* dark background if you want */
+}
+
+/* Links */
+.lang-switcher a {
+  color: white; /* text color */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between flag and text */
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+.lang-switcher a:hover {
+  color: #ffd700; /* gold on hover, for example */
+}
+
+/* Flag images */
+.lang-switcher .flag {
+  width: 24px;
+  height: auto;
+}
+
 /* Table Styles */
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #f9f9f9;
@@ -111,6 +141,30 @@ body {
     .container-fluid {
       padding: 20px;
     }
+
+   .footer {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;    /* vertical centering */
+    height: 80px;           /* adjust footer height as needed */
+    background-color: white; /* dark background to match page */
+    color: blue;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: #1E90FF;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer-link:hover {
+    color: #63B8FF;
+    text-decoration: underline;
+}
+
+
 
 tbody tr {
   user-select: none; /* Prevents text selection */
