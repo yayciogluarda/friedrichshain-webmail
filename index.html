@@ -11,7 +11,20 @@
    <link rel="icon" href="./public/images/favicon.ico" type="image/x-icon">
 </head>
 
+
+  <div class="lang-switcher">
+        <a href="/index.html">
+            <img src="./public/images/uk.png" alt="English" class="flag">
+            English
+        </a>
+        <a href="./de/index.html">
+            <img src="./public/images/de.png" alt="Deutsch" class="flag">
+            Deutsch
+        </a>
+    </div>
+
 <body>
+
   <script>
     // Redirect to emails page if the user is already logged in
     if (sessionStorage.getItem('loggedIn')) {
@@ -24,7 +37,9 @@
       <img src="./public/images/police-logo.png" alt="Police Logo" class="logo">
       Friedrichshain Police Webmail
     </a>
+
   </nav>
+
 
   <!-- Adjusted container to move login form up -->
   <div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
@@ -92,5 +107,11 @@
     });
   </script>
 </body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. All rights reserved. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
 
 </html>
