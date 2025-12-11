@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polizei Friedrichshain | E-Mail-Ansicht</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/styles.css">
+  <script>
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = '../index.html';
+    }
+  </script>
+</head>
+
+<div class="lang-switcher">
+    <a href="../index.html">
+        <img src="../public/images/uk.png" alt="English" class="flag">
+        English
+    </a>
+    <a href="./index.html">
+        <img src="../public/images/de.png" alt="Deutsch" class="flag">
+        Deutsch
+    </a>
+</div>
+
+<body class="bg-light">
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="../public/images/police-logo.png" alt="Logo" height="40">
+        Polizei Friedrichshain Webmail
+      </a>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Zurück zum Posteingang
+              </a>
+            </div>
+
+            <div class="email-header">
+              <h3 class="card-title">Wo sind Sie?</h3>
+              <span class="email-date">08. Oktober 2024 08:45</span>
+            </div>
+            <hr>
+
+            <div class="email-details">
+              <p><strong>Von:</strong> Polizeibeamter Erik Jansen &lt;erik.jansen@polizei-friedrichshain21.de&gt;</p>
+            </div>
+            <hr>
+
+            <div class="email-body">
+              <p>Detektiv Heisenberg,<br><br>
+              Ich mache mir wirklich Sorgen – ich konnte Sie nicht erreichen, und niemand scheint zu wissen, wo Sie sind. Sie haben weder auf Anrufe noch auf E-Mails reagiert, und das ist untypisch für Sie. Bitte lassen Sie mich wissen, dass es Ihnen gut geht, sobald Sie dies sehen. Wenn etwas nicht stimmt, werden wir es gemeinsam herausfinden, aber ich muss wissen, dass Sie in Sicherheit sind.<br><br>
+              Ich freue mich auf Ihre Rückmeldung.<br><br>
+              Mit freundlichen Grüßen,<br>
+              Polizeibeamter Erik Jansen<br>
+              Polizei Friedrichshain Station 21
+              </p>
+            </div>
+
+            <hr>
+            <div class="email-replies">
+              <!-- Keine Antworten für diese E-Mail -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
+
+</html>

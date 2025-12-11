@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polizei Friedrichshain | E-Mail-Ansicht</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/styles.css">
+  <script>
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = '../index.html';
+    }
+  </script>
+</head>
+
+<div class="lang-switcher">
+    <a href="../index.html">
+        <img src="../public/images/uk.png" alt="English" class="flag">
+        English
+    </a>
+    <a href="./index.html">
+        <img src="../public/images/de.png" alt="Deutsch" class="flag">
+        Deutsch
+    </a>
+</div>
+
+<body class="bg-light">
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="../public/images/police-logo.png" alt="Logo" height="40">
+        Polizei Friedrichshain Webmail
+      </a>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Zurück zum Posteingang
+              </a>
+            </div>
+
+            <div class="email-header">
+              <h3 class="card-title">Fall fallen lassen</h3>
+              <span class="email-date">07. Oktober 2024 12:12</span>
+            </div>
+            <hr>
+
+            <div class="email-details">
+              <p><strong>Von:</strong> Unbekannter Absender &lt;dropthecase@securemail.com&gt;</p>
+            </div>
+            <hr>
+
+            <div class="email-body">
+              <p><b>Warnung! Diese E-Mail stammt außerhalb der Server Ihres Instituts. Vorsicht vor Betrug, öffnen oder laden Sie keine Anhänge herunter.</b></p>
+              <hr><hr>
+              <p>Detektiv Heisenberg,<br><br>
+              Sie graben in Angelegenheiten, die besser unberührt bleiben. Beenden Sie die Ermittlungen zu Max’ Tod, sonst wird es schlecht enden. Dies ist Ihre einzige Warnung.<br><br></p>
+            </div>
+
+            <hr>
+
+            <div class="email-replies">
+              <div class="reply">
+                <p><strong>Detektiv Laura Heisenberg &lt;laura.heisenberg@polizei-friedrichshain21.de&gt;:</strong><br><br>
+                  Wer ist das? Eine Polizei-Ermittlung zu bedrohen ist eine schwere Straftat. Ich empfehle Ihnen, Ihre nächsten Schritte genau zu überlegen.<br><br>
+                  Detektiv Heisenberg
+                </p>
+                <p><small>07. Oktober 2024 12:28</small></p>
+              </div>
+              <hr>
+              <div class="reply">
+                <p><strong>&lt;dropthecase@securemail.com&gt;:</strong><br><br>
+                  Betrachten Sie dies als meine letzte Warnung, Detektiv. Gehen Sie weg, sonst endet es wie bei Maximilian.<br><br>
+                  Es gibt ein Sprichwort, das ich sehr mag: „Wer dumme Spiele spielt, gewinnt dumme Preise.“ Beenden Sie die Ermittlungen jetzt und ich verschone Sie.<br><br>
+                </p>
+                <p><small>07. Oktober 2024 12:45</small></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
+
+</html>

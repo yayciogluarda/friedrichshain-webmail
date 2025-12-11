@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polizeiwache Friedrichshain | Login</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- RELATIVE paths because this file is in /de/ and you open it directly -->
+  <link rel="stylesheet" href="../public/styles.css">
+  <link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="lang-switcher">
+    <!-- relative links for file:// usage -->
+    <a href="../index.html">
+        <img src="../public/images/uk.png" alt="English" class="flag">
+        English
+    </a>
+    <a href="index.html">
+        <img src="../public/images/de.png" alt="Deutsch" class="flag">
+        Deutsch
+    </a>
+</div>
+
+<script>
+  if (sessionStorage.getItem('loggedIn')) {
+    window.location.href = 'emails.html';
+  }
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+  <a class="navbar-brand mx-auto text-center" href="#">
+    <img src="../public/images/police-logo.png" alt="Polizeilogo" class="logo">
+    Friedrichshain Polizei Webmail
+  </a>
+</nav>
+
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+  <div class="card login-card">
+    <div class="card-body text-center">
+      <img src="../public/images/police-logo.png" alt="Polizeilogo" class="logo mb-3 mx-auto">
+      <h5 class="mb-4">Login Polizeiwache Friedrichshain</h5>
+
+      <form id="loginForm">
+        <div id="error-message" class="alert alert-danger d-none" role="alert"></div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+          </div>
+          <input type="email" class="form-control" placeholder="E-Mail" id="email" required>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+          </div>
+          <input type="password" class="form-control" placeholder="Passwort" id="password" required>
+        </div>
+
+        <button type="submit" class="submit-btn btn btn-primary btn-block">Anmelden</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const correctEmail = "laura.heisenberg@polizei-friedrichshain21.de";
+  const correctPassword = "gr3t@07102012MAIL";
+
+  document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (email === correctEmail && password === correctPassword) {
+      sessionStorage.setItem('loggedIn', true);
+      window.location.href = './emails.html';
+    } else {
+      const errorMessage = document.getElementById('error-message');
+      errorMessage.textContent = 'Falsche E-Mail oder Passwort!';
+      errorMessage.classList.remove('d-none');
+    }
+  });
+</script>
+
+</body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
+</html>

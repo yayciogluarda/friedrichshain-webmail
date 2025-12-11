@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polizei Friedrichshain | E-Mail Anzeige</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/styles.css">
+  <script>
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+
+<div class="lang-switcher">
+    <a href="../index.html">
+        <img src="../public/images/uk.png" alt="English" class="flag">
+        English
+    </a>
+    <a href="../de/index.html">
+        <img src="../public/images/de.png" alt="Deutsch" class="flag">
+        Deutsch
+    </a>
+</div>
+
+<body class="bg-light">
+  <div class="container-fluid">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="../public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Polizei Webmail
+      </a>
+    </nav>
+
+    <!-- Email Content -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+
+            <!-- Back Button -->
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Zurück zum Posteingang
+              </a>
+            </div>
+
+            <!-- Email Header -->
+            <div class="email-header">
+              <h3 class="card-title">Passwortablauf – Änderung in 6 Tagen erforderlich</h3>
+              <span class="email-date">15. September 2024, 14:00</span>
+            </div>
+            <hr>
+
+            <!-- Email Details -->
+            <div class="email-details">
+              <p><strong>Von:</strong> IT-Abteilung &lt;it@polizei-friedrichshain21.de&gt;</p>
+            </div>
+            <hr>
+
+            <!-- Email Body -->
+            <div class="email-body">
+              <p>Sehr geehrte Frau Heisenberg,<br><br>
+                dies ist eine Erinnerung, dass Ihr aktuelles Passwort für das Netzwerk der Polizeiwache 21 auf <b>friedrichshain-webmail.de</b> in 6 Tagen abläuft. Bitte aktualisieren Sie Ihr Passwort bis spätestens 21.09.2024, um die Systemsicherheit aufrechtzuerhalten.<br><br>
+
+                <strong>Passwortanforderungen</strong><br>
+                Ihr neues Passwort muss folgende Kriterien erfüllen:<br><br>
+                <ul>
+                  <li>Mindestens ein Sonderzeichen (z. B. !, @, #, $)</li>
+                  <li>Mindestens eine Zahl (0–9)</li>
+                  <li>Mindestens 8 Zeichen</li>
+                </ul><br>
+
+                <strong>Tipps für ein starkes, gut merkbares Passwort</strong><br>
+                Ein sicheres Passwort muss nicht kompliziert sein. Folgende Methoden helfen bei der Erstellung:<br><br>
+
+                <ol>
+                  <li><strong>Passphrase verwenden</strong><br>
+                    Denken Sie an einen für Sie passenden Satz und kürzen Sie ihn ab.<br>
+                    Beispiel: „Ich trinke vor der Arbeit immer Kaffee“<br>
+                    Passwort: I@tr!nkeV0rArb3it
+                  </li><br>
+
+                  <li><strong>Zeichen und Symbole kombinieren</strong><br>
+                    Nutzen Sie Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen.<br>
+                    Beispiel: „sonne2024“ → 5onn€2024
+                  </li><br>
+
+                  <li><strong>Buchstaben ersetzen</strong><br>
+                    Tauschen Sie bestimmte Buchstaben gegen ähnlich aussehende Zeichen.<br>
+                    Beispiel: E → 3, S → $, I → 1, O → 0, A → @
+                  </li><br>
+
+                  <li><strong>Akkronym bilden</strong><br>
+                    Wandeln Sie einen bekannten Satz in ein Akronym um.<br>
+                    Beispiel: „Sein oder nicht sein, das ist hier die Frage“<br>
+                    Passwort: S0n5d!hdF@
+                  </li><br>
+
+                  <li><strong>Individuelle Endungen pro Konto</strong><br>
+                    Erstellen Sie ein Basis-Passwort und hängen Sie accountspezifische Endungen an.<br>
+                    Beispiel Basis: !P@ssw0rt2024<br>
+                    Endungen: !P@ssw0rt2024MAIL, !P@ssw0rt2024BANK
+                  </li><br>
+
+                  <li><strong>Zufällige Wörter kombinieren</strong><br>
+                    Wählen Sie mehrere zufällige Wörter und verbinden Sie sie mit Zahlen oder Symbolen.<br>
+                    Beispiel: Fuchs!Fluss#Apfel77
+                  </li><br>
+                </ol>
+
+                Bitte melden Sie sich bei uns, falls Probleme bei der Passwortänderung auftreten.<br><br>
+
+                Mit freundlichen Grüßen<br>
+                IT-Support-Team<br>
+                Polizeiwache 21 Friedrichshain
+              </p>
+            </div>
+
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
+
+</html>

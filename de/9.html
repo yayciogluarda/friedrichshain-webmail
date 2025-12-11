@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polizei Friedrichshain | E-Mail-Ansicht</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/styles.css">
+  <script>
+    if (!sessionStorage.getItem('loggedIn')) {
+      window.location.href = '../index.html';
+    }
+  </script>
+</head>
+
+<div class="lang-switcher">
+    <a href="../index.html">
+        <img src="../public/images/uk.png" alt="English" class="flag">
+        English
+    </a>
+    <a href="./index.html">
+        <img src="../public/images/de.png" alt="Deutsch" class="flag">
+        Deutsch
+    </a>
+</div>
+
+<body class="bg-light">
+  <div class="container-fluid">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue mb-3">
+      <a class="navbar-brand" href="./emails.html">
+        <img class="d-inline-block align-top logo" src="../public/images/police-logo.png" alt="Logo" height="40">
+        Friedrichshain Polizei Webmail
+      </a>
+    </nav>
+
+    <!-- Email Content -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-body">
+
+            <!-- Back Button -->
+            <div class="d-flex align-items-center back-to-inbox">
+              <a href="./emails.html" class="btn btn-link text-dark p-0 d-flex align-items-center">
+                <i class="fas fa-arrow-left me-2"></i> Zurück zum Posteingang
+              </a>
+            </div>
+
+            <!-- Email Header -->
+            <div class="email-header">
+              <h3 class="card-title">Re: Kurze Frage zum Fall Dr. Falkenberg</h3>
+              <span class="email-date">07. Oktober 2024 09:23</span>
+            </div>
+            <hr>
+
+            <!-- Email Details -->
+            <div class="email-details">
+              <p><strong>Von:</strong> Dr. Alex Brunner &lt;alex.brunner@polizei-friedrichshain21.de&gt;</p>
+            </div>
+            <hr>
+
+            <!-- Email Body -->
+            <div class="email-body">
+              <p>Hey Laura,<br><br>
+              schön von dir zu hören! Bei mir läuft alles gut, nur das übliche Chaos im Labor. Die Ergebnisse waren negativ? Das ist wirklich spannend.<br><br>
+              Zu deiner Frage: Ja, du kannst die Einnahmezeit berechnen, wenn du weißt, um welche Substanz es sich handelt.  
+              Alles, was du dafür brauchst, ist das t<sub>max</sub> des Wirkstoffs – also der Zeitpunkt, an dem die höchste Konzentration des Stoffes im Blut erreicht wird.  
+              Das muss ungefähr der Zeitpunkt gewesen sein, zu dem der arme Kerl gestorben ist.<br><br>
+              Dann ist es einfache Mathematik: Du ziehst das t<sub>max</sub> (also die Zeit bis zur maximalen Konzentration) von der Todeszeit ab – so erhältst du den Zeitpunkt, zu dem der Stoff eingenommen wurde.  
+              Wenn du also glaubst, dass sein Getränk vergiftet wurde, kannst du über diese Berechnung das späteste Zeitfenster bestimmen, in dem die Substanz in sein Getränk gelangt sein muss. Wenn du weißt, wann er mit dem Trinken begonnen hat… voilà! Ein Zeitfenster.<br><br>
+              Ruf mich an, wenn du einen wissenschaftlichen Artikel zu t<sub>max</sub>-Werten bestimmter Substanzen brauchst – ich helfe dir da gerne weiter.<br><br>
+              Liebe Grüße,<br>
+              Alex</p>
+            </div>
+
+            <hr>
+
+            <!-- Replies -->
+            <div class="email-replies">
+              <div class="reply">
+                <p><strong>Detektiv Laura Heisenberg &lt;laura.heisenberg@polizei-friedrichshain21.de&gt; am 06.10.2024 14:52:</strong><br><br>
+                <em>Hi Alex!<br><br>
+                Ich hoffe, es geht dir gut! Ich wollte mich melden, weil ich bei meinem aktuellen Fall etwas feststecke. Wie du vielleicht gehört hast, ist Dr. Falkenberg während seiner Rede bei der Einführung von Amnolimumab verstorben. Wir vermuten eine Vergiftung, aber die toxikologischen Ergebnisse waren negativ, was ich wirklich absurd finde.<br><br>
+                Ich frage mich, ob man die Einnahmezeit berechnen kann, wenn man die Todeszeit und die mögliche Substanz kennt. Ich habe selbst ein Testkit bestellt, um die Getränkprobe zu untersuchen – die toxikologische Abteilung braucht heutzutage ewig.  
+                Ich wäre dir sehr dankbar für deine Einschätzung!<br><br>
+                Melde dich, wenn du kurz Zeit hast. Ich vermisse unsere Kaffeepausen im Labor!<br><br>
+                Liebe Grüße,<br>
+                Laura</em></p>
+                <p><small>06. Oktober 2024 14:52</small></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="footer text-center py-4">
+    <p class="mb-0">&copy; 2024 The Last Evidence. Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="footer-link">Impressum</a>
+    </p>
+</footer>
+
+</html>
